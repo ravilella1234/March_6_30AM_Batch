@@ -4,6 +4,7 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.util.Properties;
 
+import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -16,6 +17,9 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.ie.InternetExplorerDriverService;
 import org.openqa.selenium.support.ui.Select;
 
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
+
 public class BaseTest 
 {
 	public static WebDriver driver;
@@ -23,6 +27,10 @@ public class BaseTest
 	public static Properties or;
 	public static FileInputStream fis;
 	public static String projectPath="./";
+	
+	//Initialize Extent Reports
+	public static ExtentReports e = ExtentManager.getInstance();
+	public static ExtentTest test;
 	
 	
 	public static void init() throws Exception
@@ -34,6 +42,10 @@ public class BaseTest
 		or=new Properties();
 		fis=new FileInputStream(projectPath+"//OR.properties");
 		or.load(fis);
+		
+		PropertyConfigurator.configure(projectPath+"//log4j.properties");
+		
+		
 		
 	}
 	
@@ -69,8 +81,7 @@ public class BaseTest
 	
 	public static void selectItem(String locatorKey, int item) 
 	{
-		WebElement loc = driver.findElement(By.id(or.getProperty(locatorKey)));
-		Select sel=new Select(loc);
+		Select sel=new Select(getElement(locatorKey));
 		sel.selectByIndex(item);
 	}
 	

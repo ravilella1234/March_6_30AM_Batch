@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="19649" started-at="2019-04-17T02:03:12Z" finished-at="2019-04-17T02:03:32Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="19649" started-at="2019-04-17T02:03:12Z" finished-at="2019-04-17T02:03:32Z">
+      <class name="com.testng.Ecommerce.TC_001">
+        <test-method status="PASS" signature="startProcess()[pri:0, instance:com.testng.Ecommerce.TC_001@25af5db5]" name="startProcess" is-config="true" duration-ms="100" started-at="2019-04-17T02:03:12Z" finished-at="2019-04-17T02:03:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startProcess -->
+        <test-method status="PASS" signature="amazon()[pri:0, instance:com.testng.Ecommerce.TC_001@25af5db5]" name="amazon" duration-ms="17489" started-at="2019-04-17T02:03:12Z" finished-at="2019-04-17T02:03:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amazon -->
+        <test-method status="PASS" signature="endProcess()[pri:0, instance:com.testng.Ecommerce.TC_001@25af5db5]" name="endProcess" is-config="true" duration-ms="1974" started-at="2019-04-17T02:03:30Z" finished-at="2019-04-17T02:03:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endProcess -->
+      </class> <!-- com.testng.Ecommerce.TC_001 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

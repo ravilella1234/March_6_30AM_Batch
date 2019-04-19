@@ -5,6 +5,7 @@ import org.testng.annotations.Test;
 import com.relevantcodes.extentreports.LogStatus;
 
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.AfterMethod;
 
 public class TC_001 extends BaseTest
@@ -12,9 +13,12 @@ public class TC_001 extends BaseTest
 	
  
   @BeforeMethod
-  public void startProcess() throws Exception 
+  @Parameters("browser")
+  public void startProcess(String browserType) throws Exception 
   {
 	  init();
+	  launch(browserType);
+	  navigate("amazonurl");
   }
   
   

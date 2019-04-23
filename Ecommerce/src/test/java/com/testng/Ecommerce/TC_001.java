@@ -12,7 +12,7 @@ public class TC_001 extends BaseTest
 {
 	
  
-  @BeforeMethod
+  @BeforeMethod(groups= {"regression"})
   @Parameters("browser")
   public void startProcess(String browserType) throws Exception 
   {
@@ -22,7 +22,7 @@ public class TC_001 extends BaseTest
   }
   
   
-  @Test
+  @Test(groups= {"regression"})
   public void amazon()
   {
 	  test=e.startTest("TC_001");
@@ -46,7 +46,7 @@ public class TC_001 extends BaseTest
   }
 
   
-  @AfterMethod
+  @AfterMethod(groups= {"regression"})
   public void endProcess() 
   {
 	  e.endTest(test);

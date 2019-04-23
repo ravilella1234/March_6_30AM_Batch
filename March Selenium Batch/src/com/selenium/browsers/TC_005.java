@@ -2,7 +2,6 @@ package com.selenium.browsers;
 
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
-import org.testng.Assert;
 import org.testng.asserts.SoftAssert;
 
 import com.relevantcodes.extentreports.LogStatus;

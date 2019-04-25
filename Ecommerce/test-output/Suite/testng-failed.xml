@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="com.testng.Ecommerce.listners.Listener"/>
+    <listener class-name="com.testng.Ecommerce.listners.RetryListener"/>
+  </listeners>
   <test thread-count="5" name="Test(failed)">
     <parameter name="browser" value="chrome"/>
-    <groups>
-      <run>
-        <include name="sanity"/>
-      </run>
-    </groups>
     <classes>
-      <class name="com.testng.Ecommerce.LinksTesting1">
+      <class name="com.testng.Ecommerce.TC_001">
         <methods>
-          <include name="linktesting1"/>
+          <include name="startProcess"/>
+          <include name="amazon"/>
+          <include name="endProcess"/>
         </methods>
-      </class> <!-- com.testng.Ecommerce.LinksTesting1 -->
+      </class> <!-- com.testng.Ecommerce.TC_001 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

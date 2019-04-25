@@ -37,6 +37,13 @@ public class BaseTest
 	public static String projectPath="./";
 	public static String screenshotFileName=null;
 	
+	
+	static
+	{
+		Date dt=new Date();
+		screenshotFileName = dt.toString().replace(":", "_").replace(" ", "_")+".png";
+	}
+	
 	//Initialize Extent Reports
 	public static ExtentReports e = ExtentManager.getInstance();
 	public static ExtentTest test;
@@ -208,8 +215,7 @@ public class BaseTest
 	
 	public static void takeScreenShot() 
 	{
-		Date dt=new Date();
-		screenshotFileName = dt.toString().replace(":", "_").replace(" ", "_")+".png";
+		
 		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		try 
 		{

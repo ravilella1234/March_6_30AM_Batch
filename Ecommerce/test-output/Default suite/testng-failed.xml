@@ -3,14 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.testng.Ecommerce.DependencyDemo">
+      <class name="pageobjectmodel.Login">
         <methods>
-          <include name="blue"/>
-          <include name="white"/>
-          <include name="orange"/>
-          <include name="green"/>
+          <include name="endProcess"/>
+          <include name="login"/>
+          <include name="startProcess"/>
         </methods>
-      </class> <!-- com.testng.Ecommerce.DependencyDemo -->
+      </class> <!-- pageobjectmodel.Login -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

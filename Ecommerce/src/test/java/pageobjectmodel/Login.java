@@ -23,13 +23,22 @@ public class Login extends BaseTest
 	  navigate("automationurl");
   }
   
-  @Test
+  @Test(priority=1)
   public void login() 
   {
 	page=new PageUI(driver);
 	page.loginPage();
 	Assert.assertEquals(page.getError(), "Authentication failed.");
   }
+  
+  
+  @Test(priority=2)
+  public void registration() throws InterruptedException
+  {
+	  page=new PageUI(driver);
+	  page.customerRegistration();
+  }
+  
 
   @AfterMethod
   public void endProcess() 

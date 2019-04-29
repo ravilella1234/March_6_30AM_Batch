@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.util.Date;
 import java.util.List;
 import java.util.Properties;
+import java.util.Random;
 
 import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.By;
@@ -21,7 +22,9 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.ie.InternetExplorerDriverService;
 import org.openqa.selenium.io.FileHandler;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 import com.relevantcodes.extentreports.ExtentReports;
@@ -86,6 +89,7 @@ public class BaseTest
 		}
 		
 		driver.manage().window().maximize();
+		//driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 	}
 	
 	
@@ -98,6 +102,12 @@ public class BaseTest
 	public static void selectItem(String locatorKey, int item) 
 	{
 		Select sel=new Select(getElement(locatorKey));
+		sel.selectByIndex(item);
+	}
+	
+	public static void selectItemPage(WebElement locator, int item) 
+	{
+		Select sel=new Select(locator);
 		sel.selectByIndex(item);
 	}
 	
@@ -232,6 +242,22 @@ public class BaseTest
 	public static void closeBrowser()
 	{
 		driver.quit();
+	}
+	
+	
+	public static  void waitforElement(WebElement locator, int timeInSeconds) 
+	{
+		WebDriverWait wait=new WebDriverWait(driver, timeInSeconds);
+		wait.until(ExpectedConditions.elementToBeClickable(locator));	
+	}
+	
+	
+	public static  int ranNumber() 
+	{
+		Random r=new Random();
+		int rnum = r.nextInt(999999);
+		
+		return rnum;
 	}
 
 }

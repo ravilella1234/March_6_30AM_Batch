@@ -2,12 +2,15 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="24316" started-at="2019-04-26T01:35:20Z" finished-at="2019-04-26T01:35:45Z">
+  <suite name="Suite" duration-ms="34717" started-at="2019-04-29T12:51:39Z" finished-at="2019-04-29T12:52:14Z">
     <groups>
+      <group name="regression">
+        <method signature="TC_001.amazon()[pri:0, instance:com.testng.Ecommerce.TC_001@27f723]" name="amazon" class="com.testng.Ecommerce.TC_001"/>
+      </group> <!-- regression -->
     </groups>
-    <test name="Test" duration-ms="24316" started-at="2019-04-26T01:35:20Z" finished-at="2019-04-26T01:35:45Z">
-      <class name="pageobjectmodel.Login">
-        <test-method status="PASS" signature="startProcess(java.lang.String)[pri:0, instance:pageobjectmodel.Login@27f723]" name="startProcess" is-config="true" duration-ms="16875" started-at="2019-04-26T01:35:20Z" finished-at="2019-04-26T01:35:37Z">
+    <test name="Test" duration-ms="34717" started-at="2019-04-29T12:51:39Z" finished-at="2019-04-29T12:52:14Z">
+      <class name="com.testng.Ecommerce.TC_001">
+        <test-method status="PASS" signature="startProcess(java.lang.String)[pri:0, instance:com.testng.Ecommerce.TC_001@27f723]" name="startProcess" is-config="true" duration-ms="23171" started-at="2019-04-29T12:51:39Z" finished-at="2019-04-29T12:52:02Z">
           <params>
             <param index="0">
               <value>
@@ -18,15 +21,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startProcess -->
-        <test-method status="PASS" signature="login()[pri:0, instance:pageobjectmodel.Login@27f723]" name="login" duration-ms="7403" started-at="2019-04-26T01:35:37Z" finished-at="2019-04-26T01:35:45Z">
+        <test-method status="PASS" signature="amazon()[pri:0, instance:com.testng.Ecommerce.TC_001@27f723]" name="amazon" duration-ms="9689" started-at="2019-04-29T12:52:02Z" finished-at="2019-04-29T12:52:12Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login -->
-        <test-method status="PASS" signature="endProcess()[pri:0, instance:pageobjectmodel.Login@27f723]" name="endProcess" is-config="true" duration-ms="1" started-at="2019-04-26T01:35:45Z" finished-at="2019-04-26T01:35:45Z">
+        </test-method> <!-- amazon -->
+        <test-method status="PASS" signature="endProcess()[pri:0, instance:com.testng.Ecommerce.TC_001@27f723]" name="endProcess" is-config="true" duration-ms="1822" started-at="2019-04-29T12:52:12Z" finished-at="2019-04-29T12:52:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endProcess -->
-      </class> <!-- pageobjectmodel.Login -->
+      </class> <!-- com.testng.Ecommerce.TC_001 -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

@@ -122,23 +122,35 @@ public class BaseTest
 	{
 		WebElement element=null;
 		
-		if(locatorKey.endsWith("_id")) {
-			element=driver.findElement(By.id(or.getProperty(locatorKey)));
-		}else if (locatorKey.endsWith("_name")) {
-			element=driver.findElement(By.name(or.getProperty(locatorKey)));
-		}else if (locatorKey.endsWith("_classname")) {
-			element=driver.findElement(By.className(or.getProperty(locatorKey)));
-		}else if (locatorKey.endsWith("_xpath")) {
-			element=driver.findElement(By.xpath(or.getProperty(locatorKey)));
-		}else if (locatorKey.endsWith("_css")) {
-			element=driver.findElement(By.cssSelector(or.getProperty(locatorKey)));
-		}else if (locatorKey.endsWith("_linktext")) {
-			element=driver.findElement(By.linkText(or.getProperty(locatorKey)));
-		}else if (locatorKey.endsWith("_partiallink")) {
-			element=driver.findElement(By.partialLinkText(or.getProperty(locatorKey)));
+		try 
+		{
+			if(locatorKey.endsWith("_id")) {
+				element=driver.findElement(By.id(or.getProperty(locatorKey)));
+			}else if (locatorKey.endsWith("_name")) {
+				element=driver.findElement(By.name(or.getProperty(locatorKey)));
+			}else if (locatorKey.endsWith("_classname")) {
+				element=driver.findElement(By.className(or.getProperty(locatorKey)));
+			}else if (locatorKey.endsWith("_xpath")) {
+				element=driver.findElement(By.xpath(or.getProperty(locatorKey)));
+			}else if (locatorKey.endsWith("_css")) {
+				element=driver.findElement(By.cssSelector(or.getProperty(locatorKey)));
+			}else if (locatorKey.endsWith("_linktext")) {
+				element=driver.findElement(By.linkText(or.getProperty(locatorKey)));
+			}else if (locatorKey.endsWith("_partiallink")) {
+				element=driver.findElement(By.partialLinkText(or.getProperty(locatorKey)));
+			}
+			else {
+				reportFailure("Locator not correct :" + locatorKey);
+				Assert.fail("Failed the Test :" + locatorKey);
+			}
+		} 
+		catch (Exception e) 
+		{
+			reportFailure(e.getMessage());
+			e.printStackTrace();
+			Assert.fail("Locator not correct :" + e.getMessage());
 		}
 		return element;
-		
 	}
 	
 	
@@ -225,17 +237,18 @@ public class BaseTest
 	
 	public static void takeScreenShot() 
 	{
-		
+		Date dt=new Date();
+		screenshotFileName = dt.toString().replace(":", "_").replace(" ", "_")+".png";
 		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		try 
 		{
-			FileHandler.copy(scrFile, new File(projectPath+"//FailureScreenShots//"+screenshotFileName));
+			FileHandler.copy(scrFile, new File(projectPath+"//failure//"+screenshotFileName));
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
 		
 		//put screen shot file in extent reports
-		//test.log(LogStatus.INFO, "Screenshot --> "+ test.addScreenCapture(projectPath+"//FailureScreenShots//"+screenshotFileName));
+		test.log(LogStatus.INFO, "Screenshot --> "+ test.addScreenCapture(projectPath+"//failure//"+screenshotFileName));
 	}
 	
 	

@@ -4,13 +4,13 @@
   <test thread-count="5" name="Test(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="pageobjectmodel.Login">
+      <class name="com.testng.Ecommerce.TC_001">
         <methods>
-          <include name="endProcess"/>
-          <include name="login"/>
           <include name="startProcess"/>
+          <include name="amazon"/>
+          <include name="endProcess"/>
         </methods>
-      </class> <!-- pageobjectmodel.Login -->
+      </class> <!-- com.testng.Ecommerce.TC_001 -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

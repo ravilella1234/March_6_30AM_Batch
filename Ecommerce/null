@@ -1,0 +1,123 @@
+[1556675435.432][INFO]: [444424a00e690a8fd43bb1662e928f9d] COMMAND InitSession {
+   "capabilities": {
+      "firstMatch": [ {
+         "browserName": "chrome",
+         "goog:chromeOptions": {
+            "args": [ "user-data-dir=C:\\Users\\DELL\\AppData\\Local\\Google\\Chrome\\User Data\\Profile 1", "--disable-notifications", "disable-infobars", "--start-maximized" ],
+            "extensions": [  ]
+         },
+         "pageLoadStrategy": "none"
+      } ]
+   },
+   "desiredCapabilities": {
+      "browserName": "chrome",
+      "goog:chromeOptions": {
+         "args": [ "user-data-dir=C:\\Users\\DELL\\AppData\\Local\\Google\\Chrome\\User Data\\Profile 1", "--disable-notifications", "disable-infobars", "--start-maximized" ],
+         "extensions": [  ]
+      },
+      "pageLoadStrategy": "none"
+   }
+}
+[1556675435.437][INFO]: Populating Preferences file: {
+   "account_id_migration_state": 2,
+   "account_tracker_service_last_update": "13201148231063217",
+   "autocomplete": {
+      "retention_policy_last_version": 74
+   },
+   "autofill": {
+      "japan_city_field_migrated_to_street_address": true,
+      "orphan_rows_removed": true
+   },
+   "browser": {
+      "has_seen_welcome_page": true,
+      "navi_onboard_group": "",
+      "window_placement": {
+         "bottom": 728,
+         "left": 20,
+         "maximized": true,
+         "right": 1070,
+         "top": 20,
+         "work_area_bottom": 728,
+         "work_area_left": 0,
+         "work_area_right": 1366,
+         "work_area_top": 0
+      }
+   },
+   "countryid_at_install": 18766,
+   "data_reduction": {
+      "daily_original_length": [ "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "1425096" ],
+      "daily_original_length_application": "0",
+      "daily_original_length_unknown": "1425096",
+      "daily_original_length_via_data_reduction_proxy": [ "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
+      "daily_original_length_via_data_reduction_proxy_application": "0",
+      "daily_original_length_via_data_reduction_proxy_unknown": "1342745",
+      "daily_original_length_via_data_reduction_proxy_video": "0",
+      "daily_original_length_video": "0",
+      "daily_original_length_with_data_reduction_proxy_enabled": [ "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
+      "daily_original_length_with_data_reduction_proxy_enabled_application": "0",
+      "daily_original_length_with_data_reduction_proxy_enabled_unknown": "0",
+      "daily_original_length_with_data_reduction_proxy_enabled_video": "0",
+      "daily_received_length": [ "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "1425096" ],
+      "daily_received_length_application": "0",
+      "daily_received_length_https_with_data_reduction_proxy_enabled": [ "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
+      "daily_received_length_long_bypass_with_data_reduction_proxy_enabled": [ "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
+      "daily_received_length_short_bypass_with_data_reduction_proxy_enabled": [ "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
+      "daily_received_length_unknown": "1425096",
+      "daily_received_length_unknown_with_data_reduction_proxy_enabled": [ "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
+      "daily_received_length_via_data_reduction_proxy": [ "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
+      "daily_received_length_via_data_reduction_proxy_application": "0",
+      "daily_received_length_via_data_reduction_proxy_unknown": "1342745",
+      "daily_received_length_via_data_reduction_proxy_video": "0",
+      "daily_received_length_video": "0",
+      "daily_received_length_with_data_reduction_proxy_enabled": [ "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0" ],
+      "daily_received_length_with_data_reduction_proxy_enabled_application": "0",
+      "daily_received_length_with_data_reduction_proxy_enabled_unknown": "0",
+      "daily_received_length_with_data_reduction_proxy_enabled_video": "0",
+      "last_update_date": "13201122600000000",
+      "network_properties": {
+
+      },
+      "this_week_number": 2573,
+      "this_week_services_downstream_foreground_kb": {
+         "112189210": 2,
+         "21145003": 8001,
+         "26302604": 5,
+         "35565745": 2,
+         "47815025": 0,
+         "50464499": 6,
+         "51164680": 30,
+         "5151071": 4,
+         "54845618": 1,
+         "61656965": 0,
+         "63171670": 66,
+         "65957842": 1,
+         "88863520": 0,
+         "95682324": 2
+      },
+      "this_week_user_traffic_contenttype_downstream_kb": {
+         "0": 1311
+      }
+   },
+   "default_apps_install_state": 3,
+   "extensions": {
+      "alerts": {
+         "initialized": true
+      },
+      "chrome_url_overrides": {
+
+      },
+      "commands": {
+
+      },
+      "install_signature": {
+         "expire_date": "2019-07-23",
+         "ids": [ "aapocclcgogkmnckokdopfmhonfmgoek", "aohghmighlieiainnegkcijnfilokake", "felcaaldnbdncclmgdcncolpebgiejap", "ghbmnnjooekpmoecnnnilnnbdlolhkhi" ],
+         "invalid_ids": [  ],
+         "salt": "1Q6ng5VmX58oaXsCoiTHh61zHDvLJScBkqops/btExo=",
+         "signature": "gqeAZOvHeySC7OgUddGfBcx2j5q8/SQqIrYs2o5hfj0seC6KmJc/SO8firBIz+uk19/QsTPfNh7HKyu4/XwfWW+cluLupfM54YmLC5tXIslR3YbbC5u4eySGi3pXhjK+hDS45FvzYQmFrpMWIcXzVk8+dDtWgr+rX/HzPAwKAKnV5Qc2pCKGViTxbYtX+AivUigNWrZSzItmxX5M13MeAcTtXnol7+95oOtpyC7EN0J/LvsSWq3coGc60bCmXJEMVZnVOnahmB35zNwmfpRdjnWCHQyZ5psP3HhdmBllI1tgaIufZt5eHTLUGhSAfh87wG2a9/5CicPJfWnuWyaTAg==",
+         "signature_format_version": 2,
+         "timestamp": "13201149004540626"
+      },
+      "last_chrome_version": "74.0.3729.131"
+   },
+   "gaia_cookie": {

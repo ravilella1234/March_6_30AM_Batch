@@ -1,13 +1,11 @@
 package com.testng.Ecommerce;
 
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.relevantcodes.extentreports.LogStatus;
-
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Parameters;
-import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
 
 public class TC_001 extends BaseTest
 {
@@ -38,7 +36,7 @@ public class TC_001 extends BaseTest
 		selectItem("amazondropdown_id",10);
 		test.log(LogStatus.INFO, "Selected the indexed item 10 by using locator :- " + or.getProperty("amazondropdown_id"));
 		
-		Assert.fail();
+		//Assert.fail();
 		
 		
 		type("amazonsearchtext_id","harry Potter");

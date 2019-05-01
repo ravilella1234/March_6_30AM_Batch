@@ -3,7 +3,7 @@
 <suite name="Suite">
 
 	<listeners>
-		<listener class-name="com.testng.Ecommerce.listners.Listener"></listener>
+		<listener class-name="com.testng.Ecommerce.listners.Listener"></listener> 
 		<listener class-name="com.testng.Ecommerce.listners.RetryListener"></listener>
 	</listeners>
 

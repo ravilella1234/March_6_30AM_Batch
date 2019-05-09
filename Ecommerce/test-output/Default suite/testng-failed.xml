@@ -3,14 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="pageobjectmodel.Login">
+      <class name="actionsAndJavaScriptExecutors.MouseOperations">
         <methods>
-          <include name="endProcess"/>
-          <include name="registration"/>
-          <include name="login"/>
-          <include name="startProcess"/>
+          <include name="setup"/>
+          <include name="dragAnddrop"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- pageobjectmodel.Login -->
+      </class> <!-- actionsAndJavaScriptExecutors.MouseOperations -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

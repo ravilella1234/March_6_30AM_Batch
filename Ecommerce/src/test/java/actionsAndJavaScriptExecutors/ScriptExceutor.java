@@ -9,17 +9,22 @@ public class ScriptExceutor
 
 	public static void main(String[] args) throws InterruptedException 
 	{		
-		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\latestdrivers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\drivers\\chromedriver.exe");
 		ChromeDriver driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		//driver.get("http://automationpractice.com/index.php?controller=authentication&back=my-account");
 		driver.get("https://www.facebook.com");
 				
-					
+		
+		
+		
 		JavascriptExecutor js = (JavascriptExecutor)driver;
 		
 		
 		//js.executeScript("document.getElementById('email').value='ravilella'");
+		
+		//String value = js.executeScript("return document.title").toString();
+		//System.out.println(value);
 		
 		//js.executeScript("document.getElementById('email').value='ravilella'");
 		
@@ -43,7 +48,7 @@ public class ScriptExceutor
 		
 		//js.executeScript("document.getElementById('u_0_j').scrollIntoView()");
 		
-		/*js.executeScript("window.history.back()");
+		js.executeScript("window.history.back()");
 		
 		Thread.sleep(4000);
 
@@ -51,7 +56,7 @@ public class ScriptExceutor
 		
 		Thread.sleep(4000);
 		
-		js.executeScript("window.history.go(0)");*/
+		js.executeScript("window.history.go(0)");
 		
 		
 	}

@@ -3,13 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="actionsAndJavaScriptExecutors.MouseOperations">
+      <class name="exceldataAPIS.TestA">
         <methods>
-          <include name="setup"/>
-          <include name="dragAnddrop"/>
-          <include name="tearDown"/>
+          <include name="testA"/>
         </methods>
-      </class> <!-- actionsAndJavaScriptExecutors.MouseOperations -->
+      </class> <!-- exceldataAPIS.TestA -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

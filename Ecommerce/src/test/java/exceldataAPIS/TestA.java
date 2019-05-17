@@ -17,7 +17,7 @@ public class TestA
 		
 		ExcelAPI e=new ExcelAPI("C:\\Users\\DELL\\Desktop\\ravi.xlsx");
 		String sheetName="data";
-		String testCaseName="TestB";
+		String testCaseName="TestA";
 		
 		int testStartRowNum=0;
 		while(!e.getCellData(sheetName, 0, testStartRowNum).equals(testCaseName)) 

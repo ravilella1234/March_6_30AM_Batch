@@ -70,19 +70,19 @@ public class BaseTest
 	
 	public static void launch(String browser)
 	{
-		if(p.getProperty(browser).equalsIgnoreCase("CHROME")){
+		if(browser.equalsIgnoreCase("CHROME")){
 			//System.setProperty("webdriver.chrome.driver", "D:\\Browser_Drivers\\chromedriver.exe");
 			System.setProperty(ChromeDriverService.CHROME_DRIVER_EXE_PROPERTY, System.getProperty("user.dir")+"//drivers//chromedriver.exe");
 			driver=new ChromeDriver();
-		}else if(p.getProperty(browser).equalsIgnoreCase("firefox")) {
+		}else if(browser.equalsIgnoreCase("firefox")) {
 			//System.setProperty("webdriver.gecko.driver", "D:\\Browser_Drivers\\geckodriver.exe");
 			System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir")+"//drivers//geckodriver.exe");
 			driver=new FirefoxDriver();
-		}else if(p.getProperty(browser).equalsIgnoreCase("ie")) {
+		}else if(browser.equalsIgnoreCase("ie")) {
 			//System.setProperty("webdriver.ie.driver", "D:\\Browser_Drivers\\IEDriverServer.exe");
 			System.setProperty(InternetExplorerDriverService.IE_DRIVER_EXE_PROPERTY, System.getProperty("user.dir")+"//drivers//IEDriverServer.exe");
 			driver=new InternetExplorerDriver();
-		}else if(p.getProperty(browser).equalsIgnoreCase("edge")) {
+		}else if(browser.equalsIgnoreCase("edge")) {
 			//System.setProperty("webdriver.edge.driver", "D:\\Browser_Drivers\\MicrosoftWebDriver.exe");
 			System.setProperty(EdgeDriverService.EDGE_DRIVER_EXE_PROPERTY, System.getProperty("user.dir")+"//drivers//MicrosoftWebDriver.exe");
 			driver=new EdgeDriver();

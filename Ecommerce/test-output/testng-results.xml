@@ -1,46 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="1717" started-at="2019-05-17T01:24:32Z" finished-at="2019-05-17T01:24:34Z">
+  <suite name="Suite" duration-ms="123027" started-at="2019-05-23T01:00:47Z" finished-at="2019-05-23T01:02:50Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="1717" started-at="2019-05-17T01:24:32Z" finished-at="2019-05-17T01:24:34Z">
-      <class name="exceldataAPIS.TC_003">
-        <test-method status="PASS" signature="f(java.util.Hashtable)[pri:0, instance:exceldataAPIS.TC_003@146ba0ac]" name="f" duration-ms="31" started-at="2019-05-17T01:24:34Z" data-provider="dp" finished-at="2019-05-17T01:24:34Z">
+    <test name="Test" duration-ms="123027" started-at="2019-05-23T01:00:47Z" finished-at="2019-05-23T01:02:50Z">
+      <class name="pageobjectmodel.Login">
+        <test-method status="PASS" signature="startProcess(java.lang.String)[pri:0, instance:pageobjectmodel.Login@63440df3]" name="startProcess" is-config="true" duration-ms="45345" started-at="2019-05-23T01:00:47Z" finished-at="2019-05-23T01:01:33Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{RunMode=y, col4=A4, col3=A3, col2=test1234, col1=ravilella}]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- f -->
-        <test-method status="PASS" signature="f(java.util.Hashtable)[pri:0, instance:exceldataAPIS.TC_003@146ba0ac]" name="f" duration-ms="16" started-at="2019-05-17T01:24:34Z" data-provider="dp" finished-at="2019-05-17T01:24:34Z">
+        </test-method> <!-- startProcess -->
+        <test-method status="PASS" signature="login()[pri:1, instance:pageobjectmodel.Login@63440df3]" name="login" duration-ms="6614" started-at="2019-05-23T01:01:33Z" finished-at="2019-05-23T01:01:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="endProcess()[pri:0, instance:pageobjectmodel.Login@63440df3]" name="endProcess" is-config="true" duration-ms="0" started-at="2019-05-23T01:01:39Z" finished-at="2019-05-23T01:01:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endProcess -->
+        <test-method status="PASS" signature="startProcess(java.lang.String)[pri:0, instance:pageobjectmodel.Login@63440df3]" name="startProcess" is-config="true" duration-ms="53615" started-at="2019-05-23T01:01:39Z" finished-at="2019-05-23T01:02:33Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[{RunMode=n, col4=B4, col3=B3, col2=B2, col1=B1}]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- f -->
-        <test-method status="PASS" signature="f(java.util.Hashtable)[pri:0, instance:exceldataAPIS.TC_003@146ba0ac]" name="f" duration-ms="7" started-at="2019-05-17T01:24:34Z" data-provider="dp" finished-at="2019-05-17T01:24:34Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{RunMode=b, col4=C4, col3=C3, col2=C2, col1=C1}]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- startProcess -->
+        <test-method status="PASS" signature="registration()[pri:2, instance:pageobjectmodel.Login@63440df3]" name="registration" duration-ms="17395" started-at="2019-05-23T01:02:33Z" finished-at="2019-05-23T01:02:50Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- f -->
-      </class> <!-- exceldataAPIS.TC_003 -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- registration -->
+        <test-method status="PASS" signature="endProcess()[pri:0, instance:pageobjectmodel.Login@63440df3]" name="endProcess" is-config="true" duration-ms="0" started-at="2019-05-23T01:02:50Z" finished-at="2019-05-23T01:02:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endProcess -->
+      </class> <!-- pageobjectmodel.Login -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

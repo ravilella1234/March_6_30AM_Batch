@@ -7,7 +7,7 @@ public class TestA
 {
 
 	@Test(dataProvider="getData")
-	public void testA(String RunMode,String col1,String col2,String col3)
+	public void testA(String RunMode,String col1,String col2,String col3,String col4)
 	{
 		
 	}
@@ -17,7 +17,7 @@ public class TestA
 		
 		ExcelAPI e=new ExcelAPI("C:\\Users\\DELL\\Desktop\\ravi.xlsx");
 		String sheetName="data";
-		String testCaseName="TestA";
+		String testCaseName="TestB";
 		
 		int testStartRowNum=0;
 		while(!e.getCellData(sheetName, 0, testStartRowNum).equals(testCaseName)) 
@@ -37,6 +37,7 @@ public class TestA
 			rows++;
 		}
 		System.out.println("Total rows are :-  "+ rows);
+		
 		
 		//Calculate total Columns
 		int cols=0;

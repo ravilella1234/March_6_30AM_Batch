@@ -1,51 +1,106 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="123027" started-at="2019-05-23T01:00:47Z" finished-at="2019-05-23T01:02:50Z">
+  <suite name="Default suite" duration-ms="1850" started-at="2019-05-27T14:14:03Z" finished-at="2019-05-27T14:14:05Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="123027" started-at="2019-05-23T01:00:47Z" finished-at="2019-05-23T01:02:50Z">
-      <class name="pageobjectmodel.Login">
-        <test-method status="PASS" signature="startProcess(java.lang.String)[pri:0, instance:pageobjectmodel.Login@63440df3]" name="startProcess" is-config="true" duration-ms="45345" started-at="2019-05-23T01:00:47Z" finished-at="2019-05-23T01:01:33Z">
+    <test name="Default test" duration-ms="1850" started-at="2019-05-27T14:14:03Z" finished-at="2019-05-27T14:14:05Z">
+      <class name="exceldataAPIS.TestA">
+        <test-method status="PASS" signature="testA(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:exceldataAPIS.TestA@146ba0ac]" name="testA" duration-ms="25" started-at="2019-05-27T14:14:04Z" data-provider="getData" finished-at="2019-05-27T14:14:04Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[y]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ravilella]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[test1234]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[A3]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[A4]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- startProcess -->
-        <test-method status="PASS" signature="login()[pri:1, instance:pageobjectmodel.Login@63440df3]" name="login" duration-ms="6614" started-at="2019-05-23T01:01:33Z" finished-at="2019-05-23T01:01:39Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method status="PASS" signature="endProcess()[pri:0, instance:pageobjectmodel.Login@63440df3]" name="endProcess" is-config="true" duration-ms="0" started-at="2019-05-23T01:01:39Z" finished-at="2019-05-23T01:01:39Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- endProcess -->
-        <test-method status="PASS" signature="startProcess(java.lang.String)[pri:0, instance:pageobjectmodel.Login@63440df3]" name="startProcess" is-config="true" duration-ms="53615" started-at="2019-05-23T01:01:39Z" finished-at="2019-05-23T01:02:33Z">
+        </test-method> <!-- testA -->
+        <test-method status="PASS" signature="testA(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:exceldataAPIS.TestA@146ba0ac]" name="testA" duration-ms="10" started-at="2019-05-27T14:14:04Z" data-provider="getData" finished-at="2019-05-27T14:14:05Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[n]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[B1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[B2]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[B3]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[B4]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- startProcess -->
-        <test-method status="PASS" signature="registration()[pri:2, instance:pageobjectmodel.Login@63440df3]" name="registration" duration-ms="17395" started-at="2019-05-23T01:02:33Z" finished-at="2019-05-23T01:02:50Z">
+        </test-method> <!-- testA -->
+        <test-method status="PASS" signature="testA(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:exceldataAPIS.TestA@146ba0ac]" name="testA" duration-ms="3" started-at="2019-05-27T14:14:05Z" data-provider="getData" finished-at="2019-05-27T14:14:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[n]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[C1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[C2]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[C3]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[C4]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- registration -->
-        <test-method status="PASS" signature="endProcess()[pri:0, instance:pageobjectmodel.Login@63440df3]" name="endProcess" is-config="true" duration-ms="0" started-at="2019-05-23T01:02:50Z" finished-at="2019-05-23T01:02:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- endProcess -->
-      </class> <!-- pageobjectmodel.Login -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- testA -->
+      </class> <!-- exceldataAPIS.TestA -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
